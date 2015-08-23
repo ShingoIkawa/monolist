@@ -2,7 +2,8 @@
   <div class="container-inner inner-default clearfix">
     <% amazon_items.each do |item| %>
       <div class="item-box">
-        <div class="img-wrap">
+        <div class="image">
+          <div class="img-wrap">
             <% if item.get('LargeImage/URL').present? %>
               <%= image_tag item.get('LargeImage/URL') %>
             <% else %>
